@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "Nuevo reel en Instagram",
+    "descripcion": "Cocinando Canta a la vida",
+    "tipo": "instagram",
+    "url": "https://www.instagram.com/reel/DZF2DJsDut7/"
+  },
+  {
+    "titulo": "TikTok Oficial",
+    "descripcion": "Cocinando Canta a la vida",
+    "tipo": "tiktok",
+    "url": "https://www.tiktok.com/@el_pefe/video/7646825520474246421"
+  },
+  {
+    "titulo": "Nuevo video en Facebook",
+    "descripcion": "Cocinando Canta a la vida",
+    "tipo": "facebook",
+    "url": "https://www.facebook.com/reel/1768085024469519"
+  }
+]

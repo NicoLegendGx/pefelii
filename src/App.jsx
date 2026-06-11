@@ -4,6 +4,7 @@ import Navbar from "./components/navbar"
 import Musica from "./components/musica"
 import Galeria from "./components/galeria"
 import Footer from "./components/footer"
+import SocialFeed from "./components/feed"
 
 const songs = [
   {
@@ -93,6 +94,7 @@ const unifiedLinks = [
   { name: "Amazon Music",  url: "https://music.amazon.es/artists/B0F7LHQR6Y/pefelii",            icon: "amazonMusic",  bg: "#FF9900" },
   { name: "Deezer",        url: "https://www.deezer.com/es/artist/321591461",                    icon: "deezer",       bg: "#FEAA2D" },
   { name: "SoundCloud",    url: "https://soundcloud.com/andres-felipe-1406-1",                   icon: "soundcloud",   bg: "#FF5500" },
+  { name: "Facebook",      url: "https://www.facebook.com/andres.pefeli",                        icon: "facebook",     bg: "#1877F2" },
 ]
 
 function PlatformIcon({ type }) {
@@ -114,6 +116,8 @@ function PlatformIcon({ type }) {
       return <svg viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="4" height="4"/><rect x="8" y="2" width="4" height="4"/><rect x="14" y="2" width="4" height="4"/><rect x="2" y="8" width="4" height="4"/><rect x="8" y="8" width="4" height="4"/><rect x="14" y="8" width="4" height="4"/><rect x="20" y="8" width="2" height="4"/><rect x="2" y="14" width="4" height="4"/><rect x="8" y="14" width="4" height="4"/><rect x="2" y="20" width="4" height="4"/></svg>
     case "soundcloud":
       return <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 17.5h1V10H7v7.5zm2 1h1V10H9v8.5zm-4-1h1V10H5v7.5zm-2 0h1V10H3v7.5zm10-6.5v7h6.5c1.4 0 2.5-1.1 2.5-2.5s-1.1-2.5-2.5-2.5h-.3c-.3-2.2-2.2-4-4.7-4-1.2 0-2.3.5-3.1 1.2-.3.4-.4.8-.4 1.3v.5z"/></svg>
+    case "facebook":
+      return <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
     default:
       return null
   }
@@ -191,6 +195,27 @@ export default function App() {
 
       <Musica songs={songs} />
 
+      <section id="presave" className="presave-section fade-in">
+        <div className="container">
+          <div className="presave-inner">
+            <div className="presave-image">
+              <img src="/elreloj.png" alt="Nuevo lanzamiento" />
+            </div>
+            <div className="presave-content">
+              <h2>Nueva canción disponible el 22 de junio</h2>
+              <a
+                href="https://artists.landr.com/991048046405"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-primary btn-presave"
+              >
+                Pre-Guardar
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="video" className="video-section fade-in">
         <div className="container">
           <h2>Último Video</h2>
@@ -217,16 +242,15 @@ export default function App() {
               <div className="glow" />
             </div>
             <p>
-              Artista apasionado que fusiona ritmos tradicionales con sonidos contemporáneos.
-              Cada canción es una historia, cada melodía una emoción. Descubre la música que
-              te hace sentir vivo. Con más de una década de experiencia, Pefelii ha conquistado
-              corazones en toda Latinoamérica con su estilo único y auténtico.
+              Músico, artista y cantautor Huilense que contempla la música urbana, alternativa y folklórica.
             </p>
           </div>
         </div>
       </section>
 
       <Galeria />
+
+      <SocialFeed />
 
       <section id="encuentrame" className="social-section fade-in">
         <div className="container">
