@@ -180,7 +180,7 @@ export default function App() {
           </div>
           <div className="hero-info">
             <h1>PEFELII</h1>
-            <p>Música que enciende tu alma</p>
+            <p>El mero bacilón</p>
             <a
               href="https://open.spotify.com/intl-es/track/0ou5AjoGM1qGSrEQSKfVt9"
               target="_blank"
@@ -192,8 +192,6 @@ export default function App() {
           </div>
         </div>
       </section>
-
-      <Musica songs={songs} />
 
       <section id="presave" className="presave-section fade-in">
         <div className="container">
@@ -215,6 +213,7 @@ export default function App() {
           </div>
         </div>
       </section>
+      <Musica songs={songs} />
 
       <section id="video" className="video-section fade-in">
         <div className="container">
