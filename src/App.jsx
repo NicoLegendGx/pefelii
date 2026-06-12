@@ -241,7 +241,7 @@ export default function App() {
               <div className="glow" />
             </div>
             <p>
-              Músico, artista y cantautor Huilense que contempla la música urbana, alternativa y folklórica.
+              Pefelii es un músico, artista y cantautor Huilense que contempla la música urbana, alternativa y folklórica.
             </p>
           </div>
         </div>
