@@ -200,14 +200,14 @@ export default function App() {
               <img src="/elreloj.png" alt="Nuevo lanzamiento" />
             </div>
             <div className="presave-content">
-              <h2>Nueva canción disponible el 22 de junio</h2>
+              <h2>Último Lanzamiento</h2>
               <a
                 href="https://artists.landr.com/991048046405"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-primary btn-presave"
               >
-                Pre-Guardar
+                Escuchar
               </a>
             </div>
           </div>
